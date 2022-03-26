@@ -71,8 +71,8 @@ local Library = {
 			StrongText = Color3.fromHSV(0, 0, 1),        
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
-		Pron = {
-			Main = Color3.fromRGB(0, 0, 0),
+		PHUB = {
+			Main = Color3.fromRGB(255, 85, 0),
 			Secondary = Color3.fromRGB(0, 0, 0),
 			Tertiary = Color3.fromRGB(255, 85, 0),
 
@@ -893,7 +893,7 @@ function Library:create(options)
 	settingsTab:keybind{
 		Name = "Toggle Key",
 		Description = "Key to show/hide the UI.",
-		Keybind = Enum.KeyCode.LeftCtrl,
+		Keybind = Enum.KeyCode.LeftControl,
 		Callback = function()
 			self.Toggled = not self.Toggled
 			Library:show(self.Toggled)
